@@ -1,8 +1,11 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
-route::get('/',[DetalleVentaController::class,'index'])->name('detalleVenta.index');
+use App\Http\Controllers\DetalleVentaController;
+Route::get('/hola', function () {
+    return 'welcome';
+});
+route::get('/',[DetalleVentaController::class,'index']);
 /*Route::resource('clientes', ClienteController::class);
 Route::resource('proveedores', ProveedorController::class);
 Route::resource('categorias', CategoriaController::class);

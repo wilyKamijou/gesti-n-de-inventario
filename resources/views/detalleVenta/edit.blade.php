@@ -1,6 +1,14 @@
-@extends('layouts.app')
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
 
-@section('content')
+
     <div class="container">
         <h1>Editar Detalle de Venta</h1>
         <form action="{{ route('detalle-ventas.update', $detalleVenta->id) }}" method="POST">
@@ -37,4 +45,6 @@
             <button type="submit" class="btn btn-primary">Guardar Cambios</button>
         </form>
     </div>
-@endsection
+
+</body>
+</html>

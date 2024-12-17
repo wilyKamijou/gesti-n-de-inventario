@@ -9,9 +9,7 @@ class DetalleVentaController extends Controller
 {
     public function index()
     {
-        $Detalleventa = Detalleventa::all();
-        //return response()->json($detallesVentas);
-        return view('detalleVenta.index',compact('detalleVenta'));
+        return view('index');
     }
 
     public function show($id)
